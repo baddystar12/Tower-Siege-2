@@ -120,7 +120,7 @@ function draw() {
   polygon1.display();
   slingShot.display();
   // detectCollision function
-  detectCollision(polygon1, box1);
+  /*detectCollision(polygon1, box1);
   detectCollision(polygon1, box2);
   detectCollision(polygon1, box3);
   detectCollision(polygon1, box4);
@@ -150,18 +150,18 @@ function draw() {
   detectCollision(polygon1, box28);
   detectCollision(polygon1, box29);
   detectCollision(polygon1, box30);
-  detectCollision(polygon1, box31);
+  detectCollision(polygon1, box31);*/
   drawSprites();
 }
 
-function detectCollision(lpolygon, lbox){
+/*function detectCollision(lpolygon, lbox){
   boxBodyPosition = lbox.body.position;
   polygon1BodyPosition = lpolygon.body.position;
   var distance = dist(polygon1BodyPosition.x, polygon1BodyPosition.y, boxBodyPosition.x, boxBodyPosition.y);
   if(distance<=lbox.width+lpolygon.radius){
     Matter.Body.setStatic(lbox.body, false);
   }
-}
+}*/
 function keyPressed(){
   if(keyCode===32){
     Matter.Body.setPosition(polygon1.body, {x:50, y:200});
