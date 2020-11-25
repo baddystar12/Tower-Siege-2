@@ -1,7 +1,7 @@
 class Box5 {
     constructor(x, y, width, height){
       var box5_options ={
-          isStatic:true
+          isStatic:false
       }
       this.body = Bodies.rectangle(x,y,width,height,box5_options);
       this.width = width;
@@ -14,7 +14,8 @@ class Box5 {
         fill("purple");
         rect(position.x, position.y, this.width, this.height);
         if(this.body.speed<3){
-            this.display();
+            rectMode(CENTER);
+            rect();
         }
         else{
             World.remove(world, this.body);
