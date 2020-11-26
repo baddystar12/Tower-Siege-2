@@ -74,6 +74,7 @@ function setup() {
 function draw() {
   background("#0018b5"); 
   Engine.update(engine); 
+  text("Press space to relaunch the slingshot", 400, 25);
   ground1.display();
   ground2.display();
   // level one ground one
